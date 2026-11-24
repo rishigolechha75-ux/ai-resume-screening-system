@@ -28,6 +28,7 @@ from .schemas import (
     TextRequest,
 )
 from .skills import extract_skills
+from .static_site import mount_frontend
 
 MAX_FILES = 50
 MAX_FILE_BYTES = 5 * 1024 * 1024  # 5 MB per resume
@@ -158,3 +159,7 @@ def _rank(job_description: str, resumes: List[ResumeInput], weights=None) -> dic
         return rank_resumes(job_description, resumes, classifier, weights)
     except ValueError as exc:
         raise HTTPException(400, str(exc)) from exc
+
+
+# Must come last: serves the React app for every path not handled above.
+mount_frontend(app)

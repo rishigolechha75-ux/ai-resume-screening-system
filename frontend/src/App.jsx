@@ -8,6 +8,8 @@ const WEIGHT_LABELS = {
   experience: "Experience fit",
 };
 
+const API_DOCS = import.meta.env.DEV ? "http://localhost:8000/docs" : "/docs";
+
 const percent = (value) => `${Math.round(value * 100)}%`;
 
 export default function App() {
@@ -200,7 +202,8 @@ export default function App() {
       {result && <Results result={result} />}
 
       <footer className="footer">
-        API docs at <a href="http://localhost:8000/docs">localhost:8000/docs</a>
+        <a href={API_DOCS}>REST API documentation</a> ·{" "}
+        <a href="https://github.com/rishigolechha75-ux/ai-resume-screening-system">Source on GitHub</a>
       </footer>
     </div>
   );
