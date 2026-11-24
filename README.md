@@ -1,5 +1,7 @@
 # AI Resume Screening System
 
+[![CI](https://github.com/rishigolechha75-ux/ai-resume-screening-system/actions/workflows/ci.yml/badge.svg)](https://github.com/rishigolechha75-ux/ai-resume-screening-system/actions/workflows/ci.yml)
+
 An NLP and machine-learning system that **ranks candidate resumes against a job description**. It combines TF-IDF similarity scoring, skill matching and a job-category classifier. You can use it through a **REST API (FastAPI)** or an **interactive web interface (React)**.
 
 ![Ranked candidates with score breakdown](docs/screenshot-results.jpg)
@@ -14,6 +16,7 @@ An NLP and machine-learning system that **ranks candidate resumes against a job 
 
 - **Upload resumes** as PDF, DOCX or TXT (up to 50 at a time). Unreadable files are reported, not silently dropped.
 - **Job description analysis**: extracts required vs. nice-to-have skills, the years of experience required, and the role category.
+- **Experience detection** from phrases like "4 years of experience" or, if none are stated, from dated ranges such as "Jun 2025 – Present" (overlaps merged, education year ranges ignored).
 - **Hybrid scoring** of every resume on four explainable components, combined into a 0–100 score.
 - **Recommendation** for each candidate: *Shortlist* (≥ 60), *Review* (40–60) or *Reject* (< 40).
 - **Explanations**: matched, missing and extra skills for each candidate, plus a per-component score breakdown.
@@ -74,7 +77,7 @@ The hybrid score puts the right candidates in the top 5 **91% of the time vs 80%
 | API | FastAPI, Pydantic, Uvicorn |
 | File parsing | pypdf, python-docx |
 | Frontend | React 18, Vite |
-| Testing / CI | pytest (39 tests), GitHub Actions |
+| Testing / CI | pytest (43 tests), GitHub Actions |
 
 ## Getting started
 
