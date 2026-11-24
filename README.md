@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/rishigolechha75-ux/ai-resume-screening-system/actions/workflows/ci.yml/badge.svg)](https://github.com/rishigolechha75-ux/ai-resume-screening-system/actions/workflows/ci.yml)
 
+**Live demo: https://ai-resume-screening-system-6al1.onrender.com** (click *Try sample data*). Hosted on Render's free plan, so the first visit after a quiet period can take up to a minute to wake up.
+
 An NLP and machine-learning system that **ranks candidate resumes against a job description**. It combines TF-IDF similarity scoring, skill matching and a job-category classifier. You can use it through a **REST API (FastAPI)** or an **interactive web interface (React)**.
 
 ![Ranked candidates with score breakdown](docs/screenshot-results.jpg)
