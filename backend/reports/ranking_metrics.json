@@ -1,0 +1,21 @@
+{
+  "n_job_descriptions": 40,
+  "n_resumes_ranked": 96,
+  "results": {
+    "TF-IDF only": {
+      "P@5": 0.8,
+      "P@10": 0.74,
+      "NDCG@10": 0.7754
+    },
+    "Skills only": {
+      "P@5": 0.79,
+      "P@10": 0.6725,
+      "NDCG@10": 0.7311
+    },
+    "Hybrid (default)": {
+      "P@5": 0.91,
+      "P@10": 0.8225,
+      "NDCG@10": 0.8586
+    }
+  }
+}
