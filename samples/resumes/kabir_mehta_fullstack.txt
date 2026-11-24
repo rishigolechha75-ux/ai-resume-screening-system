@@ -1,0 +1,17 @@
+Kabir Mehta
+Full Stack Developer
+
+SUMMARY
+Full stack developer with 2 years of experience in React and Node.js, with some Python.
+
+SKILLS
+JavaScript, TypeScript, React, Node.js, Express, MongoDB, Python, Flask, Docker, Git
+
+EXPERIENCE
+Software Engineer, Pixelcraft Studio (2023 - Present)
+- Built React dashboards and Express REST APIs backed by MongoDB
+- Wrote a small Flask service for PDF report generation
+- Set up Docker Compose for local development
+
+EDUCATION
+B.E. in Information Technology

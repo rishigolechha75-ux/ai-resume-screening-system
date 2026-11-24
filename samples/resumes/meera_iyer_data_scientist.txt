@@ -1,0 +1,17 @@
+Meera Iyer
+Data Scientist
+
+SUMMARY
+Data scientist with 3 years of experience in machine learning and NLP.
+
+SKILLS
+Python, Pandas, NumPy, scikit-learn, PyTorch, NLP, SQL, Tableau, statistics
+
+EXPERIENCE
+Data Scientist, Quantra Analytics (2022 - Present)
+- Trained NLP models for support ticket classification on 50k documents
+- Built churn prediction models with scikit-learn and XGBoost
+- Created Tableau dashboards for the leadership team
+
+EDUCATION
+M.Tech in Computer Science

@@ -1,0 +1,18 @@
+Rohan Nair
+DevOps Engineer
+
+SUMMARY
+DevOps engineer with 5 years of experience in AWS, Kubernetes and automation.
+
+SKILLS
+AWS, Kubernetes, Docker, Terraform, Jenkins, CI/CD, Linux, Bash, Python, Prometheus, Grafana
+
+EXPERIENCE
+Site Reliability Engineer, Nimbus Cloud Co (2020 - Present)
+- Automated AWS infrastructure with Terraform across 3 environments
+- Migrated 30 services to Kubernetes with zero downtime
+- Built Jenkins CI/CD pipelines and Prometheus/Grafana alerting
+- Wrote Python and Bash scripts for routine operations
+
+EDUCATION
+B.Sc in Computer Science

@@ -1,0 +1,21 @@
+Ananya Rao
+Backend Developer
+
+SUMMARY
+Backend developer with 4 years of experience building Python services and REST APIs.
+
+SKILLS
+Python, FastAPI, Django, PostgreSQL, Redis, Docker, AWS, Git, pytest, Kafka
+
+EXPERIENCE
+Backend Developer, Helix Softworks (2022 - Present)
+- Built REST APIs with FastAPI backed by PostgreSQL serving 40k requests per minute
+- Added Redis caching that cut p95 latency by 35%
+- Containerised 12 services with Docker and deployed them to AWS through GitHub Actions CI/CD
+- Wrote unit tests with pytest, raising coverage to 85%
+
+Software Engineer, Northwind Labs (2021 - 2022)
+- Developed Django admin tools and background jobs consuming Kafka events
+
+EDUCATION
+B.Tech in Computer Engineering

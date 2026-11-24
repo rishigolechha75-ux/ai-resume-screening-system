@@ -1,0 +1,13 @@
+Job Title: Backend Python Developer
+
+We are hiring a Backend Python Developer with 3+ years of experience to build
+APIs for our analytics platform.
+
+Responsibilities:
+- Design and build REST APIs with FastAPI or Django
+- Model data in PostgreSQL and use Redis for caching
+- Containerise services with Docker and deploy through CI/CD pipelines on AWS
+- Write unit tests and take part in code reviews
+
+Required skills: Python, FastAPI, Django, PostgreSQL, Redis, Docker, REST APIs, AWS, Git, unit testing
+Nice to have: Kafka, Kubernetes, microservices
