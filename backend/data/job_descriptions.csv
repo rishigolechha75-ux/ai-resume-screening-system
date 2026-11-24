@@ -1,0 +1,481 @@
+Category,JobDescription
+Data Science,"Job Title: Data Analyst
+
+We are looking for a Data Analyst with 2+ years of experience.
+
+Responsibilities:
+- Deployed LLMs models as REST APIs and monitored model drift
+- Built a LLMs model to predict customer churn, improving recall by 38%
+- Trained computer vision models for text classification on 51k labelled documents
+
+Required skills: LLMs, data visualization, TensorFlow, computer vision, NumPy, Spark
+Nice to have: machine learning, PyTorch, Python
+"
+Data Science,"Job Title: ML Research Intern
+
+We are looking for a ML Research Intern with 1+ years of experience.
+
+Responsibilities:
+- Built a Pandas model to predict customer churn, improving recall by 58%
+- Deployed data visualization models as REST APIs and monitored model drift
+- Engineered features from transactional data and tuned statistics hyperparameters
+
+Required skills: NLP, PyTorch, statistics, data visualization, Pandas, Python
+Nice to have: Tableau, Spark, scikit-learn
+"
+Data Science,"Job Title: Machine Learning Engineer
+
+We are looking for a Machine Learning Engineer with 4+ years of experience.
+
+Responsibilities:
+- Deployed TensorFlow models as REST APIs and monitored model drift
+- Designed A/B experiments and applied data visualization to evaluate product changes
+- Cleaned and analysed large datasets using data visualization and machine learning
+
+Required skills: scikit-learn, TensorFlow, PyTorch, NumPy, machine learning, data visualization
+Nice to have: NLP, LLMs, computer vision
+"
+Data Science,"Job Title: ML Research Intern
+
+We are looking for a ML Research Intern with 2+ years of experience.
+
+Responsibilities:
+- Trained XGBoost models for text classification on 58k labelled documents
+- Cleaned and analysed large datasets using NLP and SQL
+- Designed A/B experiments and applied machine learning to evaluate product changes
+
+Required skills: NLP, XGBoost, SQL, Pandas, PyTorch, machine learning
+Nice to have: Tableau, hypothesis testing, Python
+"
+Data Science,"Job Title: Machine Learning Engineer
+
+We are looking for a Machine Learning Engineer with 4+ years of experience.
+
+Responsibilities:
+- Trained data visualization models for text classification on 23k labelled documents
+- Deployed computer vision models as REST APIs and monitored model drift
+- Cleaned and analysed large datasets using Pandas and statistics
+
+Required skills: data visualization, LLMs, XGBoost, Pandas, computer vision, statistics
+Nice to have: hypothesis testing, machine learning, Tableau
+"
+Frontend Development,"Job Title: React Developer
+
+We are looking for a React Developer with 5+ years of experience.
+
+Responsibilities:
+- Integrated Redux endpoints and managed client state with REST APIs
+- Implemented responsive layouts with responsive design and accessibility from Figma designs
+- Improved page load time by 15% through code splitting and accessibility optimisation
+
+Required skills: GraphQL, REST APIs, HTML, accessibility, Redux, responsive design
+Nice to have: Git, Jest, Next.js
+"
+Frontend Development,"Job Title: React Developer
+
+We are looking for a React Developer with 4+ years of experience.
+
+Responsibilities:
+- Integrated React endpoints and managed client state with Vue
+- Built reusable Redux components used across 16 product pages
+- Fixed accessibility issues to meet WCAG guidelines using Angular
+
+Required skills: React, Next.js, Vue, Angular, Redux, responsive design
+Nice to have: TypeScript, web performance, REST APIs
+"
+Frontend Development,"Job Title: Web Developer
+
+We are looking for a Web Developer with 5+ years of experience.
+
+Responsibilities:
+- Wrote unit tests with GraphQL raising coverage to 29%
+- Improved page load time by 47% through code splitting and Tailwind CSS optimisation
+- Implemented responsive layouts with React and CSS from Figma designs
+
+Required skills: HTML, Redux, GraphQL, Tailwind CSS, React, CSS
+Nice to have: JavaScript, Figma, accessibility
+"
+Frontend Development,"Job Title: Web Developer
+
+We are looking for a Web Developer with 1+ years of experience.
+
+Responsibilities:
+- Fixed accessibility issues to meet WCAG guidelines using web performance
+- Improved page load time by 40% through code splitting and web performance optimisation
+- Wrote unit tests with web performance raising coverage to 56%
+
+Required skills: JavaScript, Redux, Angular, Jest, accessibility, web performance
+Nice to have: Next.js, Git, Figma
+"
+Frontend Development,"Job Title: Web Developer
+
+We are looking for a Web Developer with 1+ years of experience.
+
+Responsibilities:
+- Wrote unit tests with responsive design raising coverage to 13%
+- Improved page load time by 60% through code splitting and Angular optimisation
+- Integrated responsive design endpoints and managed client state with Angular
+
+Required skills: responsive design, HTML, Figma, CSS, React, Angular
+Nice to have: GraphQL, JavaScript, Vue
+"
+Backend Development,"Job Title: Backend Developer
+
+We are looking for a Backend Developer with 2+ years of experience.
+
+Responsibilities:
+- Split a monolith into Java communicating over Docker
+- Reduced query latency by 18% by adding Docker caching and indexes
+- Wrote integration tests with Node.js and set up code reviews
+
+Required skills: Node.js, MongoDB, REST APIs, Go, Docker, Java
+Nice to have: Git, Kafka, MySQL
+"
+Backend Development,"Job Title: Backend Developer
+
+We are looking for a Backend Developer with 1+ years of experience.
+
+Responsibilities:
+- Designed relational schemas in FastAPI for billing and orders
+- Wrote integration tests with unit testing and set up code reviews
+- Split a monolith into Docker communicating over Docker
+
+Required skills: Docker, unit testing, Django, FastAPI, MySQL, MongoDB
+Nice to have: PostgreSQL, REST APIs, Git
+"
+Backend Development,"Job Title: Python Developer
+
+We are looking for a Python Developer with 4+ years of experience.
+
+Responsibilities:
+- Designed Express services handling 59k requests per minute
+- Split a monolith into Spring Boot communicating over Spring Boot
+- Built REST APIs with Express backed by unit testing
+
+Required skills: unit testing, Express, GraphQL, microservices, Spring Boot, MongoDB
+Nice to have: PostgreSQL, FastAPI, Git
+"
+Backend Development,"Job Title: Software Engineer
+
+We are looking for a Software Engineer with 2+ years of experience.
+
+Responsibilities:
+- Designed relational schemas in unit testing for billing and orders
+- Designed Node.js services handling 50k requests per minute
+- Built REST APIs with MySQL backed by Express
+
+Required skills: Node.js, unit testing, Kafka, MySQL, Express, Spring Boot
+Nice to have: MongoDB, Java, GraphQL
+"
+Backend Development,"Job Title: Java Developer
+
+We are looking for a Java Developer with 1+ years of experience.
+
+Responsibilities:
+- Designed relational schemas in FastAPI for billing and orders
+- Built REST APIs with unit testing backed by GraphQL
+- Wrote integration tests with GraphQL and set up code reviews
+
+Required skills: unit testing, FastAPI, MongoDB, Node.js, REST APIs, GraphQL
+Nice to have: MySQL, PostgreSQL, Flask
+"
+DevOps Engineering,"Job Title: Site Reliability Engineer
+
+We are looking for a Site Reliability Engineer with 2+ years of experience.
+
+Responsibilities:
+- Set up monitoring and alerting with Python and incident response
+- Hardened incident response servers and wrote incident response scripts for routine operations
+- Built networking pipelines that cut release time from days to 21 minutes
+
+Required skills: Linux, Kubernetes, networking, Python, incident response, Prometheus
+Nice to have: Jenkins, CI/CD, Azure
+"
+DevOps Engineering,"Job Title: Cloud Engineer
+
+We are looking for a Cloud Engineer with 4+ years of experience.
+
+Responsibilities:
+- Led incident response and postmortems for production outages
+- Reduced cloud spend by 29% through rightsizing on Terraform
+- Hardened Grafana servers and wrote Grafana scripts for routine operations
+
+Required skills: Terraform, Grafana, CI/CD, Kubernetes, Python, Linux
+Nice to have: Prometheus, Ansible, Docker
+"
+DevOps Engineering,"Job Title: Platform Engineer
+
+We are looking for a Platform Engineer with 3+ years of experience.
+
+Responsibilities:
+- Reduced cloud spend by 60% through rightsizing on Jenkins
+- Migrated 59 services to Jenkins clusters with zero downtime
+- Hardened Jenkins servers and wrote Terraform scripts for routine operations
+
+Required skills: CI/CD, AWS, networking, Terraform, incident response, Jenkins
+Nice to have: Bash, GCP, GitHub Actions
+"
+DevOps Engineering,"Job Title: Site Reliability Engineer
+
+We are looking for a Site Reliability Engineer with 1+ years of experience.
+
+Responsibilities:
+- Reduced cloud spend by 27% through rightsizing on AWS
+- Built Python pipelines that cut release time from days to 39 minutes
+- Automated infrastructure provisioning on networking using Helm
+
+Required skills: Helm, networking, incident response, Python, GitHub Actions, AWS
+Nice to have: Docker, Ansible, Bash
+"
+DevOps Engineering,"Job Title: Site Reliability Engineer
+
+We are looking for a Site Reliability Engineer with 1+ years of experience.
+
+Responsibilities:
+- Hardened GCP servers and wrote AWS scripts for routine operations
+- Automated infrastructure provisioning on Python using GCP
+- Built GCP pipelines that cut release time from days to 39 minutes
+
+Required skills: Prometheus, incident response, AWS, Docker, GCP, Python
+Nice to have: CI/CD, Bash, Jenkins
+"
+Mobile Development,"Job Title: iOS Developer
+
+We are looking for a iOS Developer with 3+ years of experience.
+
+Responsibilities:
+- Developed SwiftUI apps in Git with over 38k downloads
+- Published releases to the Play Store and App Store using SwiftUI
+- Integrated push notifications for authentication, analytics and push notifications
+
+Required skills: push notifications, app store deployment, SwiftUI, REST APIs, iOS, Git
+Nice to have: Dart, Firebase, Jetpack Compose
+"
+Mobile Development,"Job Title: iOS Developer
+
+We are looking for a iOS Developer with 4+ years of experience.
+
+Responsibilities:
+- Reduced app crash rate by 20% after profiling with SwiftUI tools
+- Implemented offline sync with local storage and React Native endpoints
+- Published releases to the Play Store and App Store using Firebase
+
+Required skills: SwiftUI, push notifications, React Native, Android, iOS, Firebase
+Nice to have: SQLite, Swift, REST APIs
+"
+Mobile Development,"Job Title: iOS Developer
+
+We are looking for a iOS Developer with 5+ years of experience.
+
+Responsibilities:
+- Reduced app crash rate by 50% after profiling with Flutter tools
+- Integrated Git for authentication, analytics and push notifications
+- Published releases to the Play Store and App Store using Firebase
+
+Required skills: Android, SwiftUI, app store deployment, Firebase, Git, Flutter
+Nice to have: REST APIs, Swift, Kotlin
+"
+Mobile Development,"Job Title: Android Developer
+
+We are looking for a Android Developer with 2+ years of experience.
+
+Responsibilities:
+- Reduced app crash rate by 32% after profiling with Firebase tools
+- Implemented offline sync with local storage and React Native endpoints
+- Integrated push notifications for authentication, analytics and push notifications
+
+Required skills: Kotlin, push notifications, React Native, SQLite, Jetpack Compose, Firebase
+Nice to have: Git, Swift, Java
+"
+Mobile Development,"Job Title: Mobile Engineer
+
+We are looking for a Mobile Engineer with 5+ years of experience.
+
+Responsibilities:
+- Implemented offline sync with local storage and REST APIs endpoints
+- Rebuilt the checkout flow in Android, lifting conversion by 49%
+- Developed push notifications apps in REST APIs with over 58k downloads
+
+Required skills: Swift, Android, Kotlin, REST APIs, React Native, push notifications
+Nice to have: Git, Firebase, Flutter
+"
+Human Resources,"Job Title: Talent Acquisition Specialist
+
+We are looking for a Talent Acquisition Specialist with 1+ years of experience.
+
+Responsibilities:
+- Coordinated quarterly HRIS cycles with department heads
+- Managed end-to-end onboarding for 49 roles across engineering and sales
+- Implemented HRIS to digitise employee records
+
+Required skills: communication, Workday, HRIS, talent acquisition, onboarding, labour law
+Nice to have: Excel, training and development, employee relations
+"
+Human Resources,"Job Title: HR Business Partner
+
+We are looking for a HR Business Partner with 4+ years of experience.
+
+Responsibilities:
+- Managed end-to-end onboarding for 30 roles across engineering and sales
+- Handled Excel cases and conducted exit interviews
+- Ran payroll programmes for new joiners and cut early attrition by 24%
+
+Required skills: Excel, onboarding, interviewing, Workday, sourcing, payroll
+Nice to have: recruitment, training and development, talent acquisition
+"
+Human Resources,"Job Title: HR Executive
+
+We are looking for a HR Executive with 3+ years of experience.
+
+Responsibilities:
+- Ran employee relations programmes for new joiners and cut early attrition by 19%
+- Implemented sourcing to digitise employee records
+- Managed end-to-end Excel for 55 roles across engineering and sales
+
+Required skills: Excel, payroll, communication, employee relations, sourcing, onboarding
+Nice to have: performance management, Workday, interviewing
+"
+Human Resources,"Job Title: HR Generalist
+
+We are looking for a HR Generalist with 3+ years of experience.
+
+Responsibilities:
+- Managed end-to-end payroll for 33 roles across engineering and sales
+- Ran Workday programmes for new joiners and cut early attrition by 14%
+- Implemented payroll to digitise employee records
+
+Required skills: payroll, talent acquisition, Workday, sourcing, labour law, Excel
+Nice to have: training and development, interviewing, employee engagement
+"
+Human Resources,"Job Title: HR Generalist
+
+We are looking for a HR Generalist with 3+ years of experience.
+
+Responsibilities:
+- Implemented labour law to digitise employee records
+- Managed end-to-end Workday for 36 roles across engineering and sales
+- Coordinated quarterly labour law cycles with department heads
+
+Required skills: Workday, employee relations, labour law, performance management, recruitment, communication
+Nice to have: training and development, employee engagement, payroll
+"
+Sales & Marketing,"Job Title: Business Development Associate
+
+We are looking for a Business Development Associate with 1+ years of experience.
+
+Responsibilities:
+- Exceeded quarterly sales targets by 49% through communication
+- Ran lead generation campaigns that grew qualified leads by 46%
+- Improved organic traffic by 16% through negotiation and lead generation
+
+Required skills: communication, copywriting, Google Ads, lead generation, digital marketing, negotiation
+Nice to have: content marketing, Salesforce, SEO
+"
+Sales & Marketing,"Job Title: Sales Executive
+
+We are looking for a Sales Executive with 2+ years of experience.
+
+Responsibilities:
+- Managed a monthly ad budget across Google Ads and communication
+- Conducted CRM to identify 51 new customer segments
+- Ran copywriting campaigns that grew qualified leads by 29%
+
+Required skills: SEO, CRM, Google Ads, copywriting, communication, market research
+Nice to have: content marketing, Salesforce, lead generation
+"
+Sales & Marketing,"Job Title: Sales Executive
+
+We are looking for a Sales Executive with 2+ years of experience.
+
+Responsibilities:
+- Conducted CRM to identify 17 new customer segments
+- Exceeded quarterly sales targets by 30% through copywriting
+- Ran copywriting campaigns that grew qualified leads by 53%
+
+Required skills: CRM, content marketing, copywriting, digital marketing, communication, HubSpot
+Nice to have: market research, social media marketing, email marketing
+"
+Sales & Marketing,"Job Title: Business Development Associate
+
+We are looking for a Business Development Associate with 1+ years of experience.
+
+Responsibilities:
+- Managed a monthly ad budget across HubSpot and lead generation
+- Ran communication campaigns that grew qualified leads by 11%
+- Maintained the pipeline in HubSpot and forecast monthly revenue
+
+Required skills: communication, Google Ads, HubSpot, email marketing, lead generation, market research
+Nice to have: Excel, social media marketing, content marketing
+"
+Sales & Marketing,"Job Title: Digital Marketing Executive
+
+We are looking for a Digital Marketing Executive with 3+ years of experience.
+
+Responsibilities:
+- Managed a monthly ad budget across negotiation and lead generation
+- Improved organic traffic by 52% through lead generation and negotiation
+- Conducted lead generation to identify 48 new customer segments
+
+Required skills: copywriting, email marketing, negotiation, HubSpot, SEO, lead generation
+Nice to have: market research, Google Ads, Excel
+"
+Finance & Accounting,"Job Title: Accountant
+
+We are looking for a Accountant with 4+ years of experience.
+
+Responsibilities:
+- Performed financial modeling of 22 client accounts and flagged control gaps
+- Reconciled ledgers in Tally and closed books within 45 days
+- Prepared monthly GST reports and presented variances to management
+
+Required skills: financial modeling, GST, auditing, Tally, Excel, taxation
+Nice to have: variance analysis, SAP, forecasting
+"
+Finance & Accounting,"Job Title: Audit Associate
+
+We are looking for a Audit Associate with 4+ years of experience.
+
+Responsibilities:
+- Prepared monthly forecasting reports and presented variances to management
+- Reconciled ledgers in GST and closed books within 32 days
+- Managed IFRS and filings, ensuring compliance with deadlines
+
+Required skills: GST, Power BI, budgeting, accounting, forecasting, IFRS
+Nice to have: taxation, financial modeling, bookkeeping
+"
+Finance & Accounting,"Job Title: Financial Analyst
+
+We are looking for a Financial Analyst with 5+ years of experience.
+
+Responsibilities:
+- Built auditing models in taxation to evaluate a 57 crore expansion
+- Managed budgeting and filings, ensuring compliance with deadlines
+- Performed variance analysis of 46 client accounts and flagged control gaps
+
+Required skills: budgeting, SQL, bookkeeping, auditing, variance analysis, taxation
+Nice to have: forecasting, financial analysis, SAP
+"
+Finance & Accounting,"Job Title: Accountant
+
+We are looking for a Accountant with 5+ years of experience.
+
+Responsibilities:
+- Reconciled ledgers in financial analysis and closed books within 31 days
+- Built auditing models in budgeting to evaluate a 13 crore expansion
+- Performed bookkeeping of 43 client accounts and flagged control gaps
+
+Required skills: financial analysis, bookkeeping, IFRS, budgeting, financial modeling, auditing
+Nice to have: GAAP, forecasting, Tally
+"
+Finance & Accounting,"Job Title: Finance Executive
+
+We are looking for a Finance Executive with 4+ years of experience.
+
+Responsibilities:
+- Reconciled ledgers in auditing and closed books within 39 days
+- Prepared monthly SAP reports and presented variances to management
+- Managed SQL and filings, ensuring compliance with deadlines
+
+Required skills: SQL, auditing, Power BI, SAP, accounting, variance analysis
+Nice to have: budgeting, GST, Tally
+"

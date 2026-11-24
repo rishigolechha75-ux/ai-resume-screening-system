@@ -1,0 +1,36 @@
+{
+  "model": "TF-IDF (1-2 grams) + Logistic Regression",
+  "trained_at": "2026-11-24T13:49:22+00:00",
+  "dataset": "resumes.csv",
+  "n_samples": 480,
+  "categories": [
+    "Backend Development",
+    "Data Science",
+    "DevOps Engineering",
+    "Finance & Accounting",
+    "Frontend Development",
+    "Human Resources",
+    "Mobile Development",
+    "Sales & Marketing"
+  ],
+  "comparison": {
+    "Logistic Regression": {
+      "test_accuracy": 0.8542,
+      "test_macro_f1": 0.8538,
+      "cv5_accuracy_mean": 0.85,
+      "cv5_accuracy_std": 0.0156
+    },
+    "Linear SVM": {
+      "test_accuracy": 0.8333,
+      "test_macro_f1": 0.8317,
+      "cv5_accuracy_mean": 0.8396,
+      "cv5_accuracy_std": 0.0306
+    },
+    "Multinomial Naive Bayes": {
+      "test_accuracy": 0.8333,
+      "test_macro_f1": 0.8306,
+      "cv5_accuracy_mean": 0.8271,
+      "cv5_accuracy_std": 0.0193
+    }
+  }
+}
