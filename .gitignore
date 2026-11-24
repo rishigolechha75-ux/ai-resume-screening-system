@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Trained model (rebuilt automatically on first start, or with scripts/train.py)
+backend/models/*.joblib
+
+# Node
+node_modules/
+frontend/dist/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+.claude/
