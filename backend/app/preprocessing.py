@@ -3,7 +3,8 @@
 from __future__ import annotations
 
 import re
-from typing import Optional
+from datetime import date
+from typing import List, Optional, Tuple
 
 _URL = re.compile(r"(https?://\S+|www\.\S+)")
 _EMAIL = re.compile(r"\S+@\S+\.\S+")
@@ -39,11 +40,67 @@ _EXPERIENCE = re.compile(
 _YEARS_ANYWHERE = re.compile(r"(\d{1,2}(?:\.\d)?)\s*\+?\s*(?:years?|yrs?)\b", re.IGNORECASE)
 
 
-def extract_years_of_experience(text: str) -> Optional[float]:
-    """Return the largest "N years ... experience" value found in the text.
+_MONTHS = {
+    "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
+    "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12,
+}
+_MONTH = r"(jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?"
+_DATE_RANGE = re.compile(
+    rf"{_MONTH}\s*'?(\d{{4}}|\d{{2}})\s*(?:-|–|—|to|till|until)\s*"
+    rf"(?:{_MONTH}\s*'?(\d{{4}}|\d{{2}})|(present|current|now|date|ongoing))",
+    re.IGNORECASE,
+)
 
-    Falls back to any "N years" mention when no explicit experience phrase
-    exists. Values above 40 are treated as noise and ignored.
+
+def _to_month_index(month: str, year: str) -> int:
+    y = int(year)
+    if y < 100:
+        y += 2000
+    return y * 12 + _MONTHS[month[:3].lower()] - 1
+
+
+def _date_ranges(text: str, today: date) -> List[Tuple[int, int]]:
+    """Find "Month YYYY - Month YYYY/Present" ranges as (start, end) month indexes."""
+    now = today.year * 12 + today.month - 1
+    ranges = []
+    for m1, y1, m2, y2, present in _DATE_RANGE.findall(text):
+        start = _to_month_index(m1, y1)
+        end = now if present else _to_month_index(m2, y2)
+        end = min(end, now)
+        if start <= end:
+            ranges.append((start, end + 1))  # inclusive of the last month
+    return ranges
+
+
+def years_from_date_ranges(text: str, today: Optional[date] = None) -> Optional[float]:
+    """Total years covered by dated ranges, with overlapping periods merged.
+
+    Only ranges that include a month name are used ("Jun 2025 - Aug 2025",
+    "January 2026 - Present"). Bare year ranges such as "2023 - 2027" are
+    ignored because they usually describe education.
+    """
+    ranges = sorted(_date_ranges(text, today or date.today()))
+    if not ranges:
+        return None
+    total, (cur_start, cur_end) = 0, ranges[0]
+    for start, end in ranges[1:]:
+        if start <= cur_end:
+            cur_end = max(cur_end, end)
+        else:
+            total += cur_end - cur_start
+            cur_start, cur_end = start, end
+    total += cur_end - cur_start
+    return round(total / 12, 1) if total else None
+
+
+def extract_years_of_experience(text: str, today: Optional[date] = None) -> Optional[float]:
+    """Estimate a candidate's (or a job's required) years of experience.
+
+    1. The largest explicit "N years ... experience" phrase.
+    2. Otherwise any "N years" mention.
+    3. Otherwise the total length of dated ranges ("Jun 2025 - Present").
+
+    Values above 40 are treated as noise and ignored.
     """
     if not text:
         return None
@@ -51,4 +108,6 @@ def extract_years_of_experience(text: str) -> Optional[float]:
     if not values:
         values = [float(v) for v in _YEARS_ANYWHERE.findall(text)]
     values = [v for v in values if 0 < v <= 40]
-    return max(values) if values else None
+    if values:
+        return max(values)
+    return years_from_date_ranges(text, today)

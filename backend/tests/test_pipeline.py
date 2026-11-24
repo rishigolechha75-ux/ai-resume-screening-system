@@ -3,7 +3,9 @@
 import pytest
 
 from app.classifier import load_or_train
-from app.preprocessing import clean_text, extract_years_of_experience
+from datetime import date
+
+from app.preprocessing import clean_text, extract_years_of_experience, years_from_date_ranges
 from app.ranker import ResumeInput, rank_resumes, recommendation_for
 from app.skills import extract_job_skills, extract_skills, skill_match
 
@@ -38,6 +40,32 @@ def test_clean_text_removes_contact_details_and_keeps_tech_terms():
 )
 def test_extract_years_of_experience(text, expected):
     assert extract_years_of_experience(text) == expected
+
+
+TODAY = date(2026, 11, 1)
+
+
+def test_years_from_date_ranges_merges_overlaps_and_handles_present():
+    text = (
+        "Intern, A Corp   June 2025 - August 2025\n"
+        "Engineer, B Ltd  Jan 2026 - Present\n"
+        "Side project     Mar 2026 – Jul 2026\n"  # overlaps with B Ltd, not double counted
+    )
+    # Jun-Aug 2025 = 3 months, Jan-Nov 2026 = 11 months -> 14 months
+    assert years_from_date_ranges(text, TODAY) == pytest.approx(1.2)
+
+
+def test_bare_year_ranges_are_ignored():
+    assert years_from_date_ranges("B.Tech, Somaiya University 2023 - 2027", TODAY) is None
+
+
+def test_explicit_years_take_priority_over_date_ranges():
+    text = "5 years of experience. Engineer, X Corp, Jan 2025 - Present"
+    assert extract_years_of_experience(text, TODAY) == 5.0
+
+
+def test_date_ranges_used_when_no_explicit_years():
+    assert extract_years_of_experience("Analyst, Feb 2024 to Jan 2025", TODAY) == 1.0
 
 
 # --- skills ------------------------------------------------------------------
